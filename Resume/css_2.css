@@ -1,0 +1,215 @@
+/* :root{
+    --dark: #24260f;
+    --bg: #f2f2e9;
+    --sub: #90a955;
+    --light: #c1d7ae;
+    --fmh: lato;
+    --bg: #karta;
+    --base-size: 10px ;
+}
+
+@mixin abso{
+    position: absolute}
+
+@mixin ib {
+    display: inline-block}
+
+@mixin center {
+    position: absolute 
+    top: 50%
+    left: 50%
+    transfrom: translateX(-50%) translateY(-50%)}
+
+@mixin size($w, $h){
+    width: $w;
+    height: $h;}
+
+@mixin t-dr{
+    transition-duration: 0.5s}
+    
+@mixin t-dl{
+    transition-delay: 0.5s}
+    
+@mixin clear{
+    opacity: 0}
+  
+@mixin unclear{
+    opacity: 1} */
+
+*{
+    vertical-align: top;
+    box-sizing: border-box;
+    /* background-color: #f2f2e9; */
+    color: #24260f;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    line-height: 36px;  
+    transition-duration: 0.5s;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.top{
+    height: 300px;
+    background-color: #24260f;
+}
+
+.top-content{
+    width:1027px;
+    height: 300px;
+    background-color: #24260f;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photo{
+    width:200px;
+    height:275px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 300px;
+    background-color: #24260f;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px ;
+    position: relative;
+    bottom: 15px;
+    background-color:#24260f;
+    color: #f2f2e9;
+    margin-top: 15px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.photo, .info{
+    display: inline-block;
+}
+.info{
+    width: 450px;
+    height: 275px;
+    background-color:#24260f;
+    margin-top: 20px;
+}
+
+.title {
+    width: 350px;
+    height: 80px;
+    margin-left: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-bottom: solid 3px #90a955;
+    background-color: #24260f;
+    color: #f2f2e9;
+}
+.contact{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.url span {
+    line-height: 36px;
+    font-family: karla, sans-serif;
+    padding-left: 10px;
+    background-color: #24260f;
+    color: #f2f2e9;
+}
+
+.max-width{
+    width: 1027px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.left, .right{
+    display: inline-block;
+    width: 49%;
+    height: 700px;
+}
+
+.con-title{
+    width: 450px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    color:#90a955;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-bottom: solid 1px #24260f;
+}
+
+.ex-con-left{
+    display: inline-block;
+    width: 50px;
+    height: 250px;
+    margin-left: 30px;
+}
+
+.ex-con-left .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #24260f;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.ex-con-left .vertical-line{
+    width: 3px;
+    height: 170px; 
+    border-radius: 10%;
+    background-color: #90a955;
+    margin-left: 24px;
+    margin-top: 5px;
+}
+
+.ex-con-right{
+    display: inline-block;
+    width: 400px;
+    height: 250px
+}
+
+.ex-con-right h3 {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.ex-con-right h5 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #90a955;
+}
+
+.ex-con-right .span{
+    font-size: 10px*1.6;
+    color: #24260f;
+    margin: 10px;
+}
+
+.ex-con-right p {
+    margin: 10px 10px 0px 10px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.ex-con-right br{
+    line-height: 26px;
+}

@@ -1,0 +1,120 @@
+// :root{
+//     --dark: #24260f;
+//     --bg: #f2f2e9;
+//     --sub: #90a955;
+//     --light: #c1d7ae;
+//     --fmh: lato;
+//     --bg: #karta;
+//     --base-size: 10px ;
+// }
+$dark: #24260f;
+$bg: #f2f2e9;
+$sub: #90a955;
+$light: #c1d7ae;
+$fmh: lato;
+$bg: #karta;
+$base-size: 10px ;
+@mixin abso{
+    position: absolute}
+
+@mixin ib {
+    display: inline-block}
+
+@mixin center {
+    position: absolute 
+    top: 50%
+    left: 50%
+    transfrom: translateX(-50%) translateY(-50%)}
+
+@mixin size($w, $h){
+    width: $w;
+    height: $h;}
+
+@mixin t-dr{
+    transition-duration: 0.5s}
+    
+@mixin t-dl{
+    transition-delay: 0.5s}
+    
+@mixin clear{
+    opacity: 0}
+  
+@mixin unclear{
+    opacity: 1}
+
+*{
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: $bg;
+    color: $dark;
+    font-family: $fmh, sans-serif;
+    font-weight: 300;
+    line-height: 36px;  
+    @include t-dr;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.top{
+    height: 300px;
+    background-color: #24260f;
+}
+
+.top-content{
+    @include size(1027px, 300px);
+    background-color: $dark;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photo{
+    @include size(200px, 275px);
+    @include ib;
+    margin-top: 20px;
+    margin-left: 300px;
+    background-color: $dark;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    position: relative;
+    bottom: 15px;
+    background-color: $dark;
+    color: $dark;
+    margin-top: 30px;
+}
+
+img{
+    @include size(200px, 200px);
+    border-radius: 100%;
+}
+
+.info{
+    @include size(450px, 275px);
+    background-color: $dark;
+    margin-top: 20px;
+}
+
+.photo.info{
+    @include ib;
+}
+
+.title{
+    @include size(350px, 80px);
+    margin-left: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-bottom: solid 3px $sub;
+    background-color: $dark;
+    color: $bg;
+}
+
